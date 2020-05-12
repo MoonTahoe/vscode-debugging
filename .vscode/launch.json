@@ -3,11 +3,14 @@
   "configurations": [
     {
       "type": "node",
+      "runtimeExecutable": "nodemon",
       "request": "launch",
       "name": "Launch Program",
       "console": "integratedTerminal",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/src/index.js"
+      "program": "${workspaceFolder}/src/index.js",
+      "restart": true,
+      "runtimeArgs": ["--require=dotenv/config"]
     }
   ]
 }

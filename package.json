@@ -1,14 +1,19 @@
 {
   "name": "vscode-debug",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "All of the common VSCode debugging setups for JavaScript",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon ./src"
+    "start": "nodemon  -r dotenv/config ./src"
   },
   "author": "Alex Banks @MoonTahoe",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "apollo-server": "^2.13.1",
+    "graphql": "^15.0.0"
   }
 }
