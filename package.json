@@ -1,0 +1,14 @@
+{
+  "name": "vscode-debug",
+  "version": "0.0.1",
+  "description": "All of the common VSCode debugging setups for JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon ./src"
+  },
+  "author": "Alex Banks @MoonTahoe",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
