@@ -1,10 +1,21 @@
-console.log("welcome to the sample application");
+const { ApolloServer, gql } = require("apollo-server");
 
-process.stdin.on("data", (input) => {
-  const d = input.toString().trim();
-  console.log(`echo: ${d}`);
-  if (d === "exit") {
-    console.log(`thank you`);
-    process.exit();
+const typeDefs = gql`
+  type Query {
+    gnar: String!
   }
+`;
+
+const resolvers = {
+  Query: {
+    gnar: () => "gnarly!!!",
+  },
+};
+
+const server = new ApolloServer({ typeDefs, resolvers });
+
+server.listen(process.env.PORT).then(({ url }) => {
+  console.log(`GraphQL apollo server running at ${url}`);
+  console.log("NODE_ENV", process.env.NODE_ENV);
+  console.log("PORT", process.env.PORT);
 });
