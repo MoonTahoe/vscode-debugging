@@ -1,13 +1,13 @@
-## Apollo Server and Nodemon
+# Node App with Webpack Build
 
 In this branch we've updated the repository's `launch.json` file to run the debugger using `nodemon`. We are also able to load local environment variables inside of the `.env` file using `dotenv` with the debug process. That was accomplised by adding `"runtimeArgs": ["--require=dotenv/config"]`to the `launch.json` config as well.
 
 ## Goals
 
-- [ ] Node
+- [x] Node
   - [x] Basic Node App
   - [x] Apollo Server App w/environment
-  - [ ] Node App with Webpack Build
+  - [x] Node App with Webpack Build
 - [ ] React
   - [ ] Create React App
 - [ ] React Native
