@@ -3,14 +3,13 @@
   "configurations": [
     {
       "type": "node",
-      "runtimeExecutable": "nodemon",
-      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/babel-node",
       "name": "Launch Program",
-      "console": "integratedTerminal",
+      "request": "launch",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/src/index.js",
-      "restart": true,
-      "runtimeArgs": ["--require=dotenv/config"]
+      "envFile": "${workspaceFolder}/.env",
+      "runtimeArgs": ["--nolazy"]
     }
   ]
 }
