@@ -1,6 +1,6 @@
 # Node App with Webpack Build
 
-In this branch we've updated the repository's `launch.json` file to run the debugger using `nodemon`. We are also able to load local environment variables inside of the `.env` file using `dotenv` with the debug process. That was accomplised by adding `"runtimeArgs": ["--require=dotenv/config"]`to the `launch.json` config as well.
+Now we want to make sure that the debugger attaches to the origional source. We can accomplish this by running the origional source with `babel-node`. We loose the ability to automatically refresh, but this solutiohn works.
 
 ## Goals
 
@@ -12,6 +12,3 @@ In this branch we've updated the repository's `launch.json` file to run the debu
   - [ ] Create React App
 - [ ] React Native
   - [ ] Debug Expo Device
-- [ ] Gatsby
-  - [ ] Static Build Process
-  - [ ] Static Site Runtime
