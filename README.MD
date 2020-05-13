@@ -1,14 +1,3 @@
-# Node App with Webpack Build
+# Debugging with Create React App
 
-Now we want to make sure that the debugger attaches to the origional source. We can accomplish this by running the origional source with `babel-node`. We loose the ability to automatically refresh, but this solutiohn works.
-
-## Goals
-
-- [x] Node
-  - [x] Basic Node App
-  - [x] Apollo Server App w/environment
-  - [x] Node App with Webpack Build
-- [ ] React
-  - [ ] Create React App
-- [ ] React Native
-  - [ ] Debug Expo Device
+You can debug create React app with the Chrome Debugger. Set `launch.json` configuration to `http://localhost:3000` and the folder to `src`, and you're good to go.
